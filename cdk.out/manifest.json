@@ -1,0 +1,529 @@
+{
+  "version": "1.16.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "my-cdk-project": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://234873931226/eu-central-1",
+      "properties": {
+        "templateFile": "my-cdk-project.template.json"
+      },
+      "metadata": {
+        "/my-cdk-project/MyVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcF9F0CA6F",
+            "trace": [
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:259:25)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet1SubnetABA0FC9E",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PublicSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet1RouteTable59212988",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PublicSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet1RouteTableAssociation763B80D4",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PublicSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet1DefaultRouteC0EC94F8",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:580:23)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:290:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:289:32)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet1EIP776FDBC1",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:701:27)",
+              "NatGateway.configureNat (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/nat.js:49:33)",
+              "Vpc.createNatGateways (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet1NATGateway8BFC007A",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:699:21)",
+              "NatGateway.configureNat (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/nat.js:49:33)",
+              "Vpc.createNatGateways (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet2SubnetA903F0F0",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PublicSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet2RouteTable8FC38586",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PublicSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet2RouteTableAssociationB59373E7",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PublicSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet2DefaultRoute547B95B3",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:580:23)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:290:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:289:32)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet2EIP7CA04B9D",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:701:27)",
+              "NatGateway.configureNat (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/nat.js:49:33)",
+              "Vpc.createNatGateways (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/public-subnetSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet2NATGateway5D574AD8",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:699:21)",
+              "NatGateway.configureNat (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/nat.js:49:33)",
+              "Vpc.createNatGateways (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/private-subnetSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivatesubnetSubnet1Subnet60DF6A9C",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PrivateSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/private-subnetSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivatesubnetSubnet1RouteTableDCBC9025",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PrivateSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/private-subnetSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivatesubnetSubnet1RouteTableAssociation45FD067D",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PrivateSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/private-subnetSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivatesubnetSubnet1DefaultRouteD90077D8",
+            "trace": [
+              "PrivateSubnet.addRoute (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:23)",
+              "NatGateway.configureNat (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/nat.js:54:17)",
+              "Vpc.createNatGateways (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/private-subnetSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivatesubnetSubnet2SubnetEC3C8C09",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PrivateSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/private-subnetSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivatesubnetSubnet2RouteTableAF25E95F",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PrivateSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/private-subnetSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivatesubnetSubnet2RouteTableAssociation6A799E18",
+            "trace": [
+              "new Subnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PrivateSubnet (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:444:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/private-subnetSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcprivatesubnetSubnet2DefaultRoute33B286AE",
+            "trace": [
+              "PrivateSubnet.addRoute (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:23)",
+              "NatGateway.configureNat (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/nat.js:54:17)",
+              "Vpc.createNatGateways (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcIGW5C4A4F63",
+            "trace": [
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:283:25)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/my-cdk-project/MyVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcVPCGW488ACE0D",
+            "trace": [
+              "new Vpc (/private/var/folders/_g/l__vjbbd1f94q726l6jv3x8c0000gn/T/jsii-kernel-KTosY7/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:285:25)",
+              "/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:49",
+              "Kernel._wrapSandboxCode (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8194:20)",
+              "Kernel._create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7741:26)",
+              "Kernel.create (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7495:21)",
+              "KernelHost.processRequest (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7285:28)",
+              "KernelHost.run (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7225:14)",
+              "Immediate._onImmediate (/Users/angelomalatacca/github/hfm-talentindex-cdk/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7228:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.16.3",
+      "@aws-cdk/core": "1.16.3",
+      "@aws-cdk/region-info": "1.16.3",
+      "@aws-cdk/aws-iam": "1.16.3",
+      "@aws-cdk/aws-cloudwatch": "1.16.3",
+      "@aws-cdk/aws-kms": "1.16.3",
+      "@aws-cdk/aws-ssm": "1.16.3",
+      "@aws-cdk/aws-ec2": "1.16.3",
+      "@aws-cdk/aws-events": "1.16.3",
+      "@aws-cdk/aws-logs": "1.16.3",
+      "@aws-cdk/aws-s3": "1.16.3",
+      "@aws-cdk/assets": "1.16.3",
+      "@aws-cdk/aws-s3-assets": "1.16.3",
+      "@aws-cdk/aws-sqs": "1.16.3",
+      "@aws-cdk/aws-lambda": "1.16.3",
+      "@aws-cdk/aws-sns": "1.16.3",
+      "@aws-cdk/aws-cloudformation": "1.16.3",
+      "jsii-runtime": "Python/3.7.5"
+    }
+  }
+}

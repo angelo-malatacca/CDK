@@ -1,0 +1,416 @@
+{
+  "Resources": {
+    "MyVpcF9F0CA6F": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/Resource"
+      }
+    },
+    "MyVpcpublicsubnetSubnet1SubnetABA0FC9E": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/24",
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "AvailabilityZone": "eu-central-1a",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc/public-subnetSubnet1"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "public-subnet"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet1/Subnet"
+      }
+    },
+    "MyVpcpublicsubnetSubnet1RouteTable59212988": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc/public-subnetSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet1/RouteTable"
+      }
+    },
+    "MyVpcpublicsubnetSubnet1RouteTableAssociation763B80D4": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcpublicsubnetSubnet1RouteTable59212988"
+        },
+        "SubnetId": {
+          "Ref": "MyVpcpublicsubnetSubnet1SubnetABA0FC9E"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet1/RouteTableAssociation"
+      }
+    },
+    "MyVpcpublicsubnetSubnet1DefaultRouteC0EC94F8": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcpublicsubnetSubnet1RouteTable59212988"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "MyVpcIGW5C4A4F63"
+        }
+      },
+      "DependsOn": [
+        "MyVpcVPCGW488ACE0D"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet1/DefaultRoute"
+      }
+    },
+    "MyVpcpublicsubnetSubnet1EIP776FDBC1": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc"
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet1/EIP"
+      }
+    },
+    "MyVpcpublicsubnetSubnet1NATGateway8BFC007A": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "MyVpcpublicsubnetSubnet1EIP776FDBC1",
+            "AllocationId"
+          ]
+        },
+        "SubnetId": {
+          "Ref": "MyVpcpublicsubnetSubnet1SubnetABA0FC9E"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc/public-subnetSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet1/NATGateway"
+      }
+    },
+    "MyVpcpublicsubnetSubnet2SubnetA903F0F0": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.1.0/24",
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "AvailabilityZone": "eu-central-1b",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc/public-subnetSubnet2"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "public-subnet"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet2/Subnet"
+      }
+    },
+    "MyVpcpublicsubnetSubnet2RouteTable8FC38586": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc/public-subnetSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet2/RouteTable"
+      }
+    },
+    "MyVpcpublicsubnetSubnet2RouteTableAssociationB59373E7": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcpublicsubnetSubnet2RouteTable8FC38586"
+        },
+        "SubnetId": {
+          "Ref": "MyVpcpublicsubnetSubnet2SubnetA903F0F0"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet2/RouteTableAssociation"
+      }
+    },
+    "MyVpcpublicsubnetSubnet2DefaultRoute547B95B3": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcpublicsubnetSubnet2RouteTable8FC38586"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "MyVpcIGW5C4A4F63"
+        }
+      },
+      "DependsOn": [
+        "MyVpcVPCGW488ACE0D"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet2/DefaultRoute"
+      }
+    },
+    "MyVpcpublicsubnetSubnet2EIP7CA04B9D": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc"
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet2/EIP"
+      }
+    },
+    "MyVpcpublicsubnetSubnet2NATGateway5D574AD8": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "MyVpcpublicsubnetSubnet2EIP7CA04B9D",
+            "AllocationId"
+          ]
+        },
+        "SubnetId": {
+          "Ref": "MyVpcpublicsubnetSubnet2SubnetA903F0F0"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc/public-subnetSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/public-subnetSubnet2/NATGateway"
+      }
+    },
+    "MyVpcprivatesubnetSubnet1Subnet60DF6A9C": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.2.0/24",
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "AvailabilityZone": "eu-central-1a",
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc/private-subnetSubnet1"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "private-subnet"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/private-subnetSubnet1/Subnet"
+      }
+    },
+    "MyVpcprivatesubnetSubnet1RouteTableDCBC9025": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc/private-subnetSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/private-subnetSubnet1/RouteTable"
+      }
+    },
+    "MyVpcprivatesubnetSubnet1RouteTableAssociation45FD067D": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcprivatesubnetSubnet1RouteTableDCBC9025"
+        },
+        "SubnetId": {
+          "Ref": "MyVpcprivatesubnetSubnet1Subnet60DF6A9C"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/private-subnetSubnet1/RouteTableAssociation"
+      }
+    },
+    "MyVpcprivatesubnetSubnet1DefaultRouteD90077D8": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcprivatesubnetSubnet1RouteTableDCBC9025"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "MyVpcpublicsubnetSubnet1NATGateway8BFC007A"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/private-subnetSubnet1/DefaultRoute"
+      }
+    },
+    "MyVpcprivatesubnetSubnet2SubnetEC3C8C09": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.3.0/24",
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "AvailabilityZone": "eu-central-1b",
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc/private-subnetSubnet2"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "private-subnet"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/private-subnetSubnet2/Subnet"
+      }
+    },
+    "MyVpcprivatesubnetSubnet2RouteTableAF25E95F": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc/private-subnetSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/private-subnetSubnet2/RouteTable"
+      }
+    },
+    "MyVpcprivatesubnetSubnet2RouteTableAssociation6A799E18": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcprivatesubnetSubnet2RouteTableAF25E95F"
+        },
+        "SubnetId": {
+          "Ref": "MyVpcprivatesubnetSubnet2SubnetEC3C8C09"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/private-subnetSubnet2/RouteTableAssociation"
+      }
+    },
+    "MyVpcprivatesubnetSubnet2DefaultRoute33B286AE": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "MyVpcprivatesubnetSubnet2RouteTableAF25E95F"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "MyVpcpublicsubnetSubnet2NATGateway5D574AD8"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/private-subnetSubnet2/DefaultRoute"
+      }
+    },
+    "MyVpcIGW5C4A4F63": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-project/MyVpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/IGW"
+      }
+    },
+    "MyVpcVPCGW488ACE0D": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVpcF9F0CA6F"
+        },
+        "InternetGatewayId": {
+          "Ref": "MyVpcIGW5C4A4F63"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "my-cdk-project/MyVpc/VPCGW"
+      }
+    }
+  }
+}

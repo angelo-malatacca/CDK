@@ -9,17 +9,19 @@ setuptools.setup(
     name="my_cdk_project",
     version="0.0.1",
 
-    description="An empty CDK Python app",
+    description="A simple CDK infrastructure",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
-    author="author",
+    author="Angelo Malatacca",
 
     package_dir={"": "my_cdk_project"},
     packages=setuptools.find_packages(where="my_cdk_project"),
 
     install_requires=[
-        "aws-cdk.core",
+        "aws-cdk.core==1.18.0",
+        "aws-cdk.aws-cloudformation==1.18.0",
+        "aws-cdk.aws_ec2==1.18.0",
     ],
 
     python_requires=">=3.6",
